@@ -99,89 +99,46 @@
   #searchbar button:hover {
     background: #ccc;
   }
-/* Banner */
-#banner{
+/* Follow on */
+#follow-on{
     width: 100%;
     height: auto;
-    margin-top: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+}
+#left-box,#right-box{
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-/*Trending*/
-#trend{
-    width: 100%;
-}
-#trendheading{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#trend #trendheading i{
-    font-size: 25px;
-    font-weight: 500;
-    margin-right: 5px; 
-}
-.fa-chart-line{
-    color: crimson;
-}
-#trend #trendheading a{
-    color: crimson;
-    transition: all .5s ease;
-    text-decoration: none;
-}
-#trend #trendheading a:hover{
-    color: white;
-}
-#trend h2{
-    font-size: 25px;
-    font-weight: 500;
-}
-#trend #trendgifs{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-#trend #trendgifs img{
-    width: 200px;
     height: 200px;
-    overflow: hidden;
-    margin-right: 5px;
 }
-/* All */
-#allgif{
-    width: 100%;
-    margin-top: 10px;
+#right-box{
+    flex-direction: column;
 }
-#trendheading{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#allgif #trendheading i{
-    font-size: 25px;
+#right-box h2{
+    font-size: 20px;
     font-weight: 500;
-    margin-right: 5px; 
-}
-.fa-tv-music{
     color: crimson;
 }
-#allgif #trendheading a{
-    color: crimson;
-    transition: all .5s ease;
-    text-decoration: none;
+#right-box #iconfollow i{
+    font-size: 25px;
+    margin-right: 10px;
+    color: green;
 }
-#allgif #trendheading a:hover{
+#right-box #iconfollow i:hover{
     color: white;
 }
-#allgif h2{
-    font-size: 25px;
-    font-weight: 500;
+#left-box img{
+    border: 2px solid green;
+    border-radius: 10px;
+    width: 300px;
 }
 /* Grid */
-#allgif .row {
+.row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
@@ -190,14 +147,14 @@
   }
   
   /* Create four equal columns that sits next to each other */
-#allgif .column {
-    -ms-flex: 24%; /* IE10 */
-    flex: 24%;
-    max-width: 24%;
+.column {
+    -ms-flex: 31%; /* IE10 */
+    flex: 31%;
+    max-width: 31%;
     padding: 0 4px;
   }
   
-#allgif .column img {
+.column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
@@ -219,7 +176,7 @@ footer{
   .footer-content p{
     border-radius: 25px;
     text-align:center;
-    color:crimson;
+    color:green;
     font-size:20px;
     margin:10px;
     position:relative;
@@ -257,3 +214,27 @@ footer{
   hr{
     opacity:.2;
   }
+/* heading */
+#trendheading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#trendheading h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+#trendheading i{
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 5px; 
+}
+#trendheading a{
+    color: crimson;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+#trendheading a:hover{
+    color: white;
+}
